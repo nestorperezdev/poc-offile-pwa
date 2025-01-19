@@ -64,11 +64,7 @@ export default defineConfig({
     ],
     server: {
         port: 3000,
-        host: '0.0.0.0',
-        https: {
-            key: fs.readFileSync('./secrets/key.pem'),
-            cert: fs.readFileSync('./secrets/cert.pem')
-        } as any
+        host: '0.0.0.0'
     },
     build: {
         target: 'esnext',
