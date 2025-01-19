@@ -1,0 +1,14 @@
+.image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-content: center;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    .item {
+        width: 100%;
+        height: auto;
+    }
+}
