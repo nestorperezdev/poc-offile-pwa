@@ -1,0 +1,12 @@
+version: "3.3"
+networks:
+  default:
+    external:
+      name: ejecutivos-mayoreo
+services:
+  client:
+    image: "offline-pwa-poc"
+    build: .
+    container_name: offline-pwa-poc-container
+    command: >
+      serve -p 80 -s dist
